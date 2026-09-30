@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: contract-analysis-agent
+version: 0.1.0
+description: Deterministic contract analysis agent that extracts clauses, identifies review signals, and produces structured findings.
+skills:
+  - contract-clause-review
+  - contract-risk-assessment
+tools:
+  - extract-clauses
+  - assess-risk
+  - compare-contracts

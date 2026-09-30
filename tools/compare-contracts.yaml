@@ -1,0 +1,19 @@
+name: compare-contracts
+description: Compare recognized clause families between two supplied contract texts.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    original_contract:
+      type: string
+    revised_contract:
+      type: string
+  required:
+    - original_contract
+    - revised_contract
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: ../core/analysis.py
+  runtime: python3

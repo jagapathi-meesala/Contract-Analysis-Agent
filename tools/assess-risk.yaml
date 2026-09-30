@@ -1,0 +1,16 @@
+name: assess-risk
+description: Detect predefined contract review signals using deterministic rules.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    contract_text:
+      type: string
+  required:
+    - contract_text
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: ../core/analysis.py
+  runtime: python3
